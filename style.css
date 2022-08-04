@@ -1,3 +1,11 @@
+:root {
+    --main-color:#1e90ff;
+    --brand-white:#ffffff;
+    --brand-blue:#022257;
+    --title-text:var(--brand-white);
+    --primary-text:var(--brand-white);
+}
+
 body {
-    background-color: deepskyblue;
+    background-color: var(--brand-blue);
 }
