@@ -1,8 +1,8 @@
 :root {
-    --brand-white:#ffffff;
-    --brand-blue:#022257;
-    --title-text:var(--brand-white);
-    --primary-text:var(--brand-white);
+    --brand-white: #ffffff;
+    --brand-blue: #022257;
+    --title-text: var(--brand-white);
+    --primary-text: var(--brand-white);
 }
 
 .navbar {
@@ -20,4 +20,8 @@
 .placeholder {
     height: 100vh;
     overflow: hidden;
+}
+
+.tales {
+    width: 100%;
 }
