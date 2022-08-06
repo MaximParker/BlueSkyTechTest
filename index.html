@@ -21,19 +21,24 @@
 </head>
 
 <body>
-    <!-- Navbar (uncollapsed) -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
     <nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top">
         <a class="navbar-brand" href="#"><img src="images/premium-logo.png" alt="Volkswagen logo" width="150"
                 height="50"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <img class="navbar-toggler-icon" src="images/hamburger.png" alt="...">
         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Collapsed version -->
 
-        <!-- Navbar (collapsed) -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto"> <!-- Navbar Links -->
-                <li class="nav-item dropdown active mr-4">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown active mr-4"> <!-- Navbar Links -->
                     <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         All models
@@ -60,30 +65,26 @@
                     </a>
                 </li>
             </ul>
+
+            <form class="form-inline my-2 my-lg-0 mr-2">
+                <button type="button" class="btn btn-outline-primary">Sign in</button>
+            </form>
             <form class="form-inline my-2 my-lg-0">
                 <button type="button" class="btn btn-primary">Register</button>
             </form>
         </div>
     </nav>
 
-    <div class="row"> <!-- First row -->
-        <div class="col-lg-4"> <!-- Left info panel -->
-            <div class="panel panel-default">
-                <div class="panel-heading">Panel heading without title</div>
-                <div class="panel-body">
-                    Panel content
-                </div>
-            </div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Hatchback</a></li>
+            <li class="breadcrumb-item active" aria-current="page">e-Golf</li>
+        </ol>
+    </nav>
 
-            <p>hello</p>
-            <div class="input-group w-50">
-                <input type="text" class="form-control" placeholder="Email address...">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Reserve</button>
-                </span>
-            </div>
-        </div>
-        <div class="col-lg-8">
+    <div class="row w-100"> <!-- First row --> 
+        <div class="col-lg-8"> <!-- Carousel images-->
             <div class="bd-example">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -125,6 +126,38 @@
                 </div>
             </div>
         </div>
+        <div class="col-lg-4"> <!-- Info panel -->
+            <div class="jumbotron h-100">
+                <h1 class="display-4">e-Golf</h1>
+                <p class="lead">The e‑Golf retains the classic styling of the Golf, with its own electric twist. LED
+                    headlights, C-shaped running lights and signature blue flash across the front grille.</p>
+                <hr class="my-4">
+                <p>Register your interest in the e-Golf by reserving one for a test drive at our dealership today, free
+                    of charge.</p>
+                <p class="lead">
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email address..." aria-label="Email input"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">Submit reservation</button>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked="checked">
+                        <label class="form-check-label" for="exampleCheck1">Notify me with future updates and offers
+                            from PremiumVW</label>
+                    </div>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your details with anyone else. <a href="#">Privacy policy.</a></small>
+                </form>
+                </p>
+                <img src="images/trustpilot.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="placeholder">
+        sagfsdfdgsfdsgfgdsdsfg
     </div>
 
     <footer class="footer text-center text-lg-start bg-light text-muted">
@@ -135,7 +168,7 @@
                 <div class="row mt-3">
 
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <a href="#"><img src="images/logo-transparent-dark.png" alt="Volkswagen logo" width="50"
+                        <a href="#"><img src="images/premium-logo-dark.png" alt="Volkswagen logo" width="150"
                                 height="50"></a>
                         <h6 class="text-uppercase fw-bold mb-4">
                             ©2022
@@ -180,7 +213,7 @@
 
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p> Dealership, Test Dv. EX4 MPL, UK</p>
+                        <p>7 Test Drive, EX4 MPL, UK</p>
                         <p>
                             info@example.com
                         </p>

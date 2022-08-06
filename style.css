@@ -12,7 +12,6 @@
 }
 
 .footer {
-    background-color: var(--brand-blue);
     color: var(--primary-text);
     padding: 1% 1%;
 }
