@@ -21,24 +21,19 @@
 </head>
 
 <body>
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-
-    <nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-inverse sticky-top">
         <a class="navbar-brand" href="#"><img src="images/premium-logo.png" alt="Volkswagen logo" width="150"
                 height="50"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <img class="navbar-toggler-icon" src="images/hamburger.png" alt="...">
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Collapsed version -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Collapsed version -->
 
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown active mr-4"> <!-- Navbar Links -->
+                <li class="nav-item dropdown active mr-4">
+                    <!-- Navbar Links -->
                     <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         All models
@@ -83,8 +78,10 @@
         </ol>
     </nav>
 
-    <div class="row w-100"> <!-- First row --> 
-        <div class="col-lg-8"> <!-- Carousel images-->
+    <div class="row w-100">
+        <!-- First row -->
+        <div class="col-lg-8">
+            <!-- Carousel images-->
             <div class="bd-example">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -126,7 +123,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4"> <!-- Info panel -->
+        <div class="col-lg-4">
+            <!-- Info panel -->
             <div class="jumbotron h-100">
                 <h1 class="display-4">e-Golf</h1>
                 <p class="lead">The e‑Golf retains the classic styling of the Golf, with its own electric twist. LED
@@ -136,19 +134,49 @@
                     of charge.</p>
                 <p class="lead">
                 <form>
+                    <!-- Reservation form -->
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="Email address..." aria-label="Email input"
-                            aria-describedby="basic-addon2">
+                            aria-describedby="basic-addon2" required>
                         <div class="input-group-append">
-                            <button class="btn btn-primary" type="submit">Submit reservation</button>
+                            <button type="submit" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModal">
+                                <!-- Button trigger modal -->
+                                Submit reservation
+                            </button>
                         </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Confirmation email sent</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <strong>Please confirm your email address via the link sent to your inbox.</strong>
+                                        Your reservation will not be put through until you confirm your address.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1" checked="checked">
                         <label class="form-check-label" for="exampleCheck1">Notify me with future updates and offers
                             from PremiumVW</label>
                     </div>
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your details with anyone else. <a href="#">Privacy policy.</a></small>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your details with anyone else.
+                        <a href="#">Privacy policy.</a></small>
                 </form>
                 </p>
                 <img src="images/trustpilot.png" class="d-block w-100" alt="...">
