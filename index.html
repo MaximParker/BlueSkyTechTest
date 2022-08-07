@@ -95,35 +95,13 @@
                     <form id="emailSubmission">
                         <!-- Reservation form -->
                         <div class="input-group mb-3">
-                            <input type="text" id="emailInput" class="form-control" placeholder="Email address..."
+                            <input type="email" id="emailInput" class="form-control" placeholder="Email address..."
                                 aria-label="Email input" aria-describedby="basic-addon2" required>
                             <div class="input-group-append">
-                                <button type="submit" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#exampleModal">
+                                <button type="submit" class="btn btn-primary">
                                     <!-- Button trigger modal -->
                                     Submit
                                 </button>
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Confirmation email sent</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Please click the confirmation link sent to your inbox.
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div class="form-check">
@@ -135,12 +113,6 @@
                             else.
                             <a href="#">Privacy policy.</a></small>
                     </form>
-                    <script>
-                        document.getElementById('emailSubmission').addEventListener('submit', function (event) {
-                            event.preventDefault()
-                            console.log("beep")
-                        })
-                    </script>
                     </p>
                     <hr class="my-4">
                     <img src="images/trustpilot.png" class="d-block w-100" alt="...">
@@ -225,70 +197,96 @@
         </div>
     </div>
 
-
-    <div class="my-4">
-        <div id="accordion">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
-                            Collapsible Group Item #1
-                        </button>
-                    </h5>
-                </div>
-
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
+    <div class="container my-4">
+        <div class="row w-100">
+            <div class="col-sm">
+                <img src="images/Carousel_C.png" class="d-block w-100" alt="...">
             </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                            aria-expanded="false" aria-controls="collapseTwo">
-                            Collapsible Group Item #2
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.
+            <div class="col">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Collapsible Group Item #1
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid.
+                                3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                nesciunt
+                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                single-origin
+                                coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                wes
+                                anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                Leggings
+                                occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                haven't heard
+                                of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                            aria-expanded="false" aria-controls="collapseThree">
-                            Collapsible Group Item #3
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Collapsible Group Item #2
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid.
+                                3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                nesciunt
+                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                single-origin
+                                coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                wes
+                                anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                Leggings
+                                occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                haven't heard
+                                of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Collapsible Group Item #3
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid.
+                                3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                nesciunt
+                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                single-origin
+                                coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                wes
+                                anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                Leggings
+                                occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                haven't heard
+                                of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -358,6 +356,34 @@
             </div>
         </section>
     </footer>
+
+    <!-- Modal (Success) -->
+    <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog" aria-labelledby="modalSuccessLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSuccessLabel">Confirmation email sent</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    Please click the confirmation link sent to .
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('emailSubmission').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.getElementById('modalBody').innerHTML = `Please check the confirmation link sent to <strong>${document.getElementById('emailInput').value}</strong>.`;
+            $('#modalSuccess').modal('show');
+        })
+    </script>
 
 </body>
 
